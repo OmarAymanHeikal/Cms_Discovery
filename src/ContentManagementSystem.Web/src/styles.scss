@@ -4,7 +4,9 @@
 /* Variables */
 :root {
   --primary-color: #007bff;
+  --primary-hover: #0056b3;
   --secondary-color: #6c757d;
+  --secondary-hover: #545b62;
   --success-color: #28a745;
   --danger-color: #dc3545;
   --warning-color: #ffc107;
@@ -58,7 +60,7 @@ a {
 }
 
 a:hover {
-  color: darken(var(--primary-color), 10%);
+  color: var(--primary-hover);
   text-decoration: underline;
 }
 
@@ -85,7 +87,7 @@ a:hover {
     color: white;
     
     &:hover {
-      background-color: darken(var(--primary-color), 10%);
+      background-color: var(--primary-hover);
     }
   }
   
@@ -94,7 +96,7 @@ a:hover {
     color: white;
     
     &:hover {
-      background-color: darken(var(--secondary-color), 10%);
+      background-color: var(--secondary-hover);
     }
   }
 }
